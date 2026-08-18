@@ -1,0 +1,145 @@
+.hero-section {
+  width: 100%;
+  min-height: calc(100vh - 113px);
+  position: relative;
+  overflow: hidden;
+  background: url("../../assets/images/bg_hero_2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.hero-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 0px auto;
+  max-width: 1140px;
+}
+
+.hero-section .wrapper h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #d4a15c;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  margin-bottom: 5px;
+}
+
+.hero-section .wrapper h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.hero-section .wrapper h1 span {
+  color: #d4a15c;
+  font-style: italic;
+}
+
+.hero-section .wrapper h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 1px;
+  background-color: #d4a15c;
+}
+
+.hero-section .wrapper p {
+  font-size: 13px;
+  line-height: 19px;
+  max-width: 355px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero-section .wrapper .cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-section .wrapper .cta-buttons button {
+  height: 44px;
+  padding: 0px 8px;
+  width: 148px;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0px;
+  background-color: #d4a15c;
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+
+.hero-section .wrapper .built-para {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section .wrapper h1 {
+    font-size: 70px;
+    line-height: 80px;
+    padding-bottom: 25px;
+    margin-bottom: 60px;
+  }
+
+  .hero-section .wrapper h5 {
+    font-size: 20px;
+  }
+
+  .hero-section .wrapper h1::after {
+    width: 300px;
+  }
+
+  .hero-section .wrapper p {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 727px;
+  }
+
+  .hero-section .wrapper .built-para {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hero-section .wrapper .cta-buttons {
+    gap: 20px;
+  }
+
+  .hero-section .wrapper .cta-buttons button {
+    width: 180px;
+    font-size: 13px;
+    height: 54px;
+  }
+}

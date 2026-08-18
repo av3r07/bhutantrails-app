@@ -1,0 +1,11 @@
+.font-1 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}

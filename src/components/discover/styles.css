@@ -1,0 +1,124 @@
+.discover-section {
+  width: 100%;
+  padding: 100px 10px;
+  background-color: #f8f5f0;
+}
+
+.discover-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.discover-section .wrapper span {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dba765;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.discover-section .wrapper h2 {
+  font-size: 28px;
+  line-height: 36px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.discover-section .wrapper p {
+  color: #4d4d4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.discover-section .wrapper ul {
+  padding: 0px 10px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.discover-section .wrapper ul li {
+  position: relative;
+  width: 100%;
+}
+
+.discover-section .wrapper ul li .image {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.discover-section .wrapper ul li .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discover-section .wrapper ul li .image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: linear-gradient(180deg, #00000080 0%, #dba76bb3 100%);
+  background-color: transparent;
+}
+
+.discover-section .wrapper ul li .content {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  text-align: left;
+  left: 20px;
+}
+
+.discover-section .wrapper ul li .content span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.discover-section .wrapper ul li .content h3 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .discover-section .wrapper ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-section .wrapper h2 {
+    font-size: 45px;
+    line-height: 54px;
+    margin-bottom: 22px;
+  }
+
+  .discover-section .wrapper p {
+    font-size: 22px;
+    line-height: 30px;
+    width: 70%;
+  }
+
+  .discover-section .wrapper ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
